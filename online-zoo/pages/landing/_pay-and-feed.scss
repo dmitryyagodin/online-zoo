@@ -1,0 +1,331 @@
+.pay-and-feed__section {
+  width: 100%;
+  background-image: url("../../assets/images/pay-and-feed-background.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.pay-and-feed-forest {
+  position: relative;
+}
+.pay-and-feed__arrow,
+.pay-and-feed__arrow_640 {
+    position: absolute;
+    right: -31%;
+    top: 40%;
+    width: 13vw;
+}
+.pay-and-feed__arrow_640 {
+  display: none;
+}
+
+#tree4 {
+  position: absolute;
+  width: 130px;
+  height: 230px;
+  left: 16px;
+  bottom: 210px;
+}
+
+#bamboo3 {
+  position: absolute;
+  width: 116px;
+  height: 206px;
+  right: 32px;
+  bottom: 148px;
+} 
+
+.pay-and-feed {
+  max-width: 1920px;
+  margin: 0 auto;
+  // height: 564px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pay-and-feed-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85.66%;
+  margin: 91px auto 0 auto;
+}
+
+.pay-and-feed-heading {
+  font-family: Rubik;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #C5E1E6;
+  letter-spacing: normal;
+}
+
+.pay-and-feed-btn {
+  background: #C5E1E6;
+  border-radius: 100px;
+  border: none;
+  position: static;
+  width: 356px;
+  height: 52px;
+  cursor: pointer;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.pay-and-feed-btn:hover {
+  color: #ffffff;
+  background-color: $black;
+  box-shadow: 0px 2px 50px rgba(1, 24, 27, 0.6);
+}
+
+.pay-and-feed__icons {
+  box-sizing: border-box;
+  margin: 50px auto;
+  // padding-top: 20px;
+  // height: 564px; //407px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1480px;
+  display: flex;
+}
+
+.pay-and-feed__icon-text {
+  position: absolute;
+  bottom: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #C5E1E6;
+}
+
+.pay-and-feed__item {
+  position: relative;
+  margin-top: 50px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+
+@media (max-width: 1920px) {
+  .pay-and-feed__section {
+    background-image: url("../../assets/images/pay-and-feed-background-1920.svg");
+    height: 564px;
+  }
+  .pay-and-feed {
+    display: flex;
+    flex-direction: column;
+  }
+  .pay-and-feed-wrapper {
+    width: 85.66%;
+    max-width: 1480px;
+    position: static;
+    margin: 91px auto 0 auto;
+  }
+  .pay-and-feed-icons {
+    height: 188px;
+    margin: 0 auto;
+  }
+  .pay-and-feed__item {
+    max-width: 480px;
+    margin: 0;
+    width: 32.43vw;
+  }
+  .forest2 {
+    display: block;
+  }
+  #bamboo3 {
+    display: none;
+  }
+  #tree4 {
+    display: block;
+    position: absolute;
+    width: 102px;
+    height: 181px;
+    left: -40px;
+    bottom: 190px;
+  }    
+}
+
+@media (max-width: 1600px) {
+  .pay-and-feed__section {
+    background-image: url("../../assets/images/pay-and-feed-background-1200.svg");
+  }
+  .pay-and-feed {
+    justify-content: center;
+    height: 100%;
+  }
+  .pay-and-feed-wrapper {
+    width: 93.66%;
+    margin: 34px 46px 0px auto;
+  }
+  #tree4 {
+    display: block;
+    position: absolute;
+    width: 102px;
+    height: 181px;
+    left: -40px;
+    bottom: 90px;
+  }
+  .pay-and-feed-btn {
+    width: 255px;
+    // width: 174px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 2;
+  }
+  .pay-and-feed-heading {
+    width: 174px;
+    overflow: hidden;
+  }
+  .pay-and-feed__icons {
+    margin: 24px auto 74px 16px;
+  }
+  .pay-and-feed__arrow {
+    right: -25%;
+    width: 16vw;
+    top: 45%;;
+  }
+  .pay-and-feed__item {
+    width: 31.91vw;
+  }
+}
+
+@media (max-width: 1150px) {
+  .pay-and-feed__section {
+    background-image: url("../../assets/images/pay-and-feed-background-640.svg");
+    background-position-y: bottom;
+    height: 472px;
+  }
+  .pay-and-feed-forest {
+    display: none;
+  }
+  .pay-and-feed-wrapper {
+    margin: 0 auto;
+  }
+  #tree4 {
+    display: none;
+  }
+  .pay-and-feed__icons {
+    justify-content: space-around;
+    margin: 0;
+  }
+  .pay-and-feed-btn {
+    width: 174px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 2;
+  }
+  .pay-and-feed-heading {
+    width: 174px;
+    overflow: hidden;
+  }
+  .pay-and-feed__arrow {
+    display: none;
+  }
+  .pay-and-feed__arrow_640 {
+    display: inline-block;
+    width: 52px;
+    right: -39%;
+  }
+  .pay-and-feed__item {
+    max-width: 186px;
+    margin: 0;
+    width: 29vw;
+  }
+}
+
+
+@media (max-width: 800px) {
+  
+  .pay-and-feed__arrow_640 {
+    display: inline-block;
+    width: 52px;
+    right: -24%;
+  }
+  .pay-and-feed-img {
+    width: 100%;
+  }
+  .pay-and-feed__icon-text {
+    bottom: -10px;
+  }
+  .pay-and-feed-heading {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .pay-and-feed-wrapper {
+    margin-top: -37px;
+    width: 89.66%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pay-and-feed__icon-text {
+    position: absolute;
+    bottom: -37px;
+    text-align: center;
+    color: #C5E1E6;
+  }
+  .pay-and-feed__section {
+    background-image: url("../../assets/images/pay-and-feed-background-320.svg");
+    // background-position-y: bottom;
+    height: 904px;
+  }
+  .pay-and-feed {
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .pay-and-feed-wrapper {
+    margin: 50px auto 0 10px;
+  }
+  .pay-and-feed__icons {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    margin: -14px auto 74px 54px;
+  }
+  .pay-and-feed__item {
+    width: 186px;
+    height: 161px;
+  }
+  
+  .pay-and-feed__arrow_640 {
+    display: inline-block;
+    width: 52px;
+    right: -24%;
+    transform: rotate(90deg);
+    display: sta;
+    transform: rotate(90deg);
+    position: static;
+    margin-top: 21px;
+  }
+  .pay-and-feed-btn {
+    width: 93.75%;
+    max-width: 350px;
+    position: absolute;
+    bottom: 10%;
+    left: 3.125%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+  }
+  .pay-and-feed-img {
+    width: 100%;
+  }
+  .pay-and-feed__icon-text {
+    bottom: -45px;
+  }
+}

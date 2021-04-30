@@ -1,0 +1,330 @@
+.hero {
+  width: 100%;
+  background-image:
+        url(../../assets/images/hero-background.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}  .hero-wrapper {
+      height: 795px;
+      max-width: 1920px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+  } .hero-text {
+      width: 628px;
+      height: 355px;
+      margin-top: 115px;
+      margin-left: 219px;
+      color: $hero-text-color;
+    } .hero-heading {
+        font-family: Rubik;
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 81px;
+        margin: 0;
+      } span {
+          font-weight: 400;
+          font-size: 64px;
+          letter-spacing: 1px;
+          vertical-align: bottom;
+      } .hero-paragraph {
+          width: 480px;
+          font-family: Roboto;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 13px 0 3px 0;
+      } .hero-btns {
+          display: none;
+      } .hero-btn {
+          width: 258px;
+          height: 52px;
+          font-family: Roboto Mono;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 52px;
+          letter-spacing: -0.05em;
+          text-transform: uppercase;
+          color: $black;
+          border-radius: 100px;
+          border: none;
+          margin-top: 84px;
+          cursor: pointer;
+          box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+      } .hero-btn:hover {
+        color: #ffffff;
+        background-color: $black;
+        box-shadow: 0px 2px 50px rgba(1, 24, 27, 0.6);
+      } .hero-donate-btn {
+        display: none;
+        background-color: #C5E1E5;
+      }
+
+.hero-image-div {
+    // max-width: 804px;
+    flex-basis: 40%;
+    // width: 100%;
+    // max-height: 666px;
+    position: relative;
+    margin: 2.44% 11.51% 2% 2.5%;
+    align-self: center;
+} .hero-image-div svg {
+    width: 100%;
+}
+  .hero-play-video-btn {
+      width: 16%;
+      position: absolute;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1;
+      top: 47%;
+      left: 46%;
+    } .hero-image {
+        cursor: pointer;
+        max-width: 804px;
+        width: 100%;
+        transition: width 2s;
+    } .hero-play-video-btn:hover {
+        transform: scale(1.2);
+    }
+
+.hero-image:hover {
+  width: 1000px;
+}
+
+
+@media (max-width: 1920px) {
+  .hero {
+    width: 100%;
+    background-image: url("../../assets/images/hero-background-1920.svg");
+  }
+  .hero-wrapper {
+    width: 100%;
+  }
+  .hero-text {
+    margin-left: 11.4%
+  }
+  .hero-image-div {
+    flex-basis: 47%;
+    position: relative;
+  }
+}
+
+
+@media (max-width: 1500px) {
+  .hero {
+    width: 100%;
+    background-image: url("../../assets/images/hero-background-1920.svg");
+    background-position-y: top;
+  }
+  .hero-wrapper {
+    height: 795px;
+  }
+  .hero-text {
+    height: 355px;
+    width: 573px;
+    margin-top: 3%;
+    margin-left: 35px;
+    color: $hero-text-color;
+  } .hero-heading {
+      font-family: Rubik;
+      font-size: 64px;
+      line-height: 66px;
+      margin: 0;
+    } span {
+        font-weight: 400;
+        font-size: 48px;
+        letter-spacing: 1px;
+        vertical-align: bottom;
+    } .hero-paragraph {
+        width: 480px;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 24px 0 3px 0;
+    } .hero-btn {
+      margin-top: 34px;
+    } .hero-image-div {
+        margin: 0 17px 100px 0px;
+        flex-basis: 47%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    background-image: url("../../assets/images/hero-background-1200.svg");
+  }
+  .hero-wrapper {
+    height: 657px;
+  }
+  .hero-text {
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  .hero-image-div {
+    margin: 0 17px 100px 0px;
+ }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    background-image: url("../../assets/images/hero-background-1200.svg");
+  }
+  .hero-wrapper {
+    height: 657px;
+  }
+  .hero-text {
+    margin-left: 20px;
+    margin-top: 28px;
+    width: 317px;
+  }
+  .hero-image-div {
+    align-self: flex-start;
+    margin: 50px 20px 95px 0px;
+  }
+  .hero-image-div svg {
+    width: 100%;
+  }
+  .hero-heading {
+    font-family: Rubik;
+    font-size: 36px;
+    line-height: 43px;
+    margin: 0;
+  } span {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      vertical-align: bottom;
+  } .hero-paragraph {
+      width: 290px;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 20px;
+  } .hero__btns {
+      display: flex;
+      justify-content: space-between;
+      width: 360px;
+  } .hero-btn {
+      margin-top: 34px;
+      width: 170px;
+      height: 37px;
+      font-size: 14px;
+      line-height: 37px;
+  } .hero-donate-btn {
+      display: inline-block;
+
+
+  }
+}
+
+@media (max-width: 660px) {
+  .hero {
+    background-image: url("../../assets/images/hero-background-640.svg");
+  }
+  .hero-wrapper {
+    height: 405px;
+  }
+  .hero-text {
+    margin-left: 20px;
+    margin-top: 32px;
+    width: 317px;
+  }
+  .hero-image-div {
+    margin: 32px 20px 159px 25px;
+    position: relative;
+  }
+  .hero-image-div svg {
+    width: 100%;
+  }
+  .hero-play-video-btn {
+    width: 31%;
+    top: 25%;
+    left: 33%;
+  }
+  .hero-heading {
+    font-family: Rubik;
+    font-size: 36px;
+    line-height: 38px;
+    margin: 0;
+  } span {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0;
+      vertical-align: bottom;
+  } .hero-paragraph {
+      width: 290px;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 21px 0 3px 0;
+  } .hero-btn {
+    margin-top: 27px;
+    width: 170px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 37px;
+  }
+  .hero-donate-btn {
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 570px) {
+  .hero {
+    background-image: url("../../assets/images/hero-background-320.svg");
+    background-position-y: bottom;
+  }
+  .hero-wrapper {
+    height: 531px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  } .hero-image-div {
+      margin: 0;
+      width: 255px;
+      align-self: center;
+      flex-basis: 48%;
+  } .hero-play-video-btn {
+    width: 30%;
+    top: 21%;
+    left: 33%;
+  } .hero-text {
+    width: 300px;
+    height: auto;
+    margin: 0;
+    position: relative;
+    top: -21px;
+  } .hero-heading {
+    width: 300px;
+    font-family: Rubik;
+    font-size: 32px;
+    line-height: 28px;
+    margin: 0;
+  } span {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 33px;
+      // letter-spacing: 1px;
+      vertical-align: bottom;
+  } .hero-paragraph {
+      width: 290px;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 20px;
+  } .hero-btn {
+    margin-top: 34px;
+    width: 139px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 37px;
+  } .hero__btns {
+      width: 300px;
+      position: relative;
+      top: -21px;
+  }
+}

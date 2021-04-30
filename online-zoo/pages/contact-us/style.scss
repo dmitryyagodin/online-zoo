@@ -1,0 +1,84 @@
+@import '../landing/header';
+@import '../landing/footer';
+@import '../landing/forest_zoo';
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+main {
+  width: 1920;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 361px;
+  height: 434px;
+  margin: auto;
+}
+
+.main__wrapper-heading {
+  font-family: Sahitya;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 250px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.main__wrapper-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D444D;
+  margin: 0;
+  padding: 10px;
+}
+
+.main__wrapper-btn {
+  align-self: center;
+  width: 247px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #19707D;
+  cursor: pointer;
+  margin-top: 26px;
+  border: none;
+}
+
+.main__wrapper-btn a {
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.05em;
+text-transform: uppercase;
+color: #F3F7F8;
+margin: 0px 10px;
+}
+
+.main__wrapper-btn:hover {
+  background: #C5E1E6;
+}
+
+.main__wrapper-btn:hover a {
+  color: #0D444D;
+}

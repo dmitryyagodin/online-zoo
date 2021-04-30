@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Zoo gorilla</title>
+    <link rel="stylesheet" href="../../landing/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <a class="header-logo" href="../../landing/index.html"><img class="logo-image" src="../../../assets/icons/logo-large.svg" alt="logo" /></a>
+        <nav class="header__nav">
+          <input type="checkbox" class="header-btn header__input-checkbox" id="check">
+          <label class="header__label-checkbox" for="check">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.83398 8.75H29.1673" stroke="#C5E1E6" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.83398 17.5H29.1673" stroke="#C5E1E6" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.83398 26.25H29.1673" stroke="#C5E1E6" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+        </input>
+          <ul class="header__list">
+            <li><a href="../../landing/index.html">about</a></li>
+            <li><a href="../../map/map.html">map</a></li>
+            <li><a href="#" class="header-current-page">zoos</a></li>
+            <li><a href="../../contact-us/404.html">contact us</a></li>
+            <li><a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">design</a></li>
+            <li class="header__list-account-link"><a href="#">My account</a></li>
+          </ul>
+        </nav>
+        <h1>Online Zoo</h1>
+        <div class="header-user-btns">
+          <div class="header-search">
+            <input type="text" class="header-search-input" placeholder="Search...">  
+            <button class="header-btn search-btn">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3333 22.6667C18.488 22.6667 22.6667 18.488 22.6667 13.3333C22.6667 8.17868 18.488 4 13.3333 4C8.17868 4 4 8.17868 4 13.3333C4 18.488 8.17868 22.6667 13.3333 22.6667Z" stroke="#C5E1E6" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 28L20 20" stroke="#C5E1E6" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <button class="header-btn log-in-btn">log in</button>
+          <button class="header-btn sign-up-btn">sign up</button>
+          <button class="header-btn header-btn-user-1200">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="28" cy="28" r="28" fill="#B9D5D9"/>
+              <path d="M28 18C25.2475 18 23 20.2475 23 23C23 25.7525 25.2475 28 28 28C30.7525 28 33 25.7525 33 23C33 20.2475 30.7525 18 28 18ZM28 19.5C29.9419 19.5 31.5 21.0581 31.5 23C31.5 24.9419 29.9419 26.5 28 26.5C26.0581 26.5 24.5 24.9419 24.5 23C24.5 21.0581 26.0581 19.5 28 19.5ZM21.9893 30C20.8994 30 20 30.8994 20 31.9893V32.75C20 34.5521 21.1396 35.9461 22.6533 36.7812C24.167 37.6164 26.0841 38 28 38C29.9159 38 31.833 37.6164 33.3467 36.7812C34.6373 36.0692 35.6087 34.9313 35.8809 33.5H36.001V31.9893C36.001 30.8994 35.1006 30 34.0107 30H21.9893ZM21.9893 31.5H34.0107C34.2898 31.5 34.501 31.7102 34.501 31.9893V32H34.5V32.75C34.5 33.9479 33.8271 34.8039 32.6221 35.4688C31.417 36.1336 29.7091 36.5 28 36.5C26.2909 36.5 24.583 36.1336 23.3779 35.4688C22.1729 34.8039 21.5 33.9479 21.5 32.75V31.9893C21.5 31.7102 21.7102 31.5 21.9893 31.5Z" fill="white"/>
+              <path d="M28 18C25.2475 18 23 20.2475 23 23C23 25.7525 25.2475 28 28 28C30.7525 28 33 25.7525 33 23C33 20.2475 30.7525 18 28 18ZM21.9893 30C20.8994 30 20 30.8994 20 31.9893V32.75C20 34.5521 21.1396 35.9461 22.6533 36.7812C24.167 37.6164 26.0841 38 28 38C29.9159 38 31.833 37.6164 33.3467 36.7812C34.6373 36.0692 35.6087 34.9313 35.8809 33.5H36.001V31.9893C36.001 30.8994 35.1006 30 34.0107 30H21.9893Z" fill="white"/>
+              </svg>              
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <aside class="aside__wrapper">
+        <div class="aside__pet-item">
+          <div class="zoo-image__frame" style="--i:url(../../../assets/images/pandas-img.jpg)" onclick="window.location.href='../panda/panda.html'" title="Panda, Mountains of southwest China"></div>
+          <h3 class="aside__pet-item-title">Pandas</h3>
+        </div>
+       
+        <div class="aside__pet-item">
+          <div class="zoo-image__frame" style="--i:url(../../../assets/images/eagles-img.jpg)" onclick="window.location.href='../eagle/eagle.html'" title="Eagle, North-West, USA"></div>
+          <h3 class="aside__pet-item-title">Eagles</h3>
+        </div>
+
+        <div class="aside__pet-item current">
+          <div class="current-zoo-image">
+            <img class="zoo-image-border"src="../../../assets/images/zoo-image-border.svg" alt=""/>
+            <div class="zoo-image__frame" style="--i: url(../../../assets/images/gorillas-img.jpg)" title="Gorilla, Congo, Uganda, Rwanda"></div>
+          </div>
+          <h3 class="aside__pet-item-title">gorillas</h3>
+        </div>
+        
+        <div class="aside__pet-item">
+            <div class="zoo-image__frame" style="--i:url(../../../assets/images/aligators-img.jpg)" onclick="window.location.href='../aligator/aligator.html'" title="Aligator, Florida, USA"></div>
+            <h3 class="aside__pet-item-title">Aligators</h3>
+        </div>
+        
+      </aside>
+      <main class="main__wrapper">
+        <div class="zoo-screen">
+          <div class="zoo-screen__heading">
+            <h2 class="zoo-screen__heading-text">Gorillas</h2>
+            <div class="zoo-screen__heading-icons">
+              <button class="zoo-screen_icon-btn"><img class="zoo-screen_icon-btn-img" src="../../../assets/icons/icon-info-btn.svg" alt=""></button>
+              <button class="zoo-screen_icon-btn"><img class="zoo-screen_icon-btn-img" src="../../../assets/icons/icon-like-btn.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="zoo-screen__subheading">Main Cameras</div>
+          <div class="main__screen-container">
+            <iframe class="zoo-screen__main-screen" width="560" height="315" src="https://www.youtube.com/embed/rgXWDk7rh4w" showinfo=0 modestbranding=1 title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="zoo-screen__subheading">Side Cameras</div>
+          <div class="zoo-screen__side-screens-wrapper">
+            <div class="zoo-screen__side-screen-item">
+              <div class="zoo-screen__temporary-block"></div> <!-- !remove later -->
+              <img class="zoo-screen__side-screen-item-icon" src="../../../assets/icons/icon-live-video.svg" alt="">
+              <iframe width="380" height="240" src="https://www.youtube.com/embed/3NkW-V_veng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="zoo-screen__side-screen-item">
+              <div class="zoo-screen__temporary-block"></div> <!-- !remove later -->
+              <img class="zoo-screen__side-screen-item-icon" src="../../../assets/icons/icon-live-video.svg" alt="">
+              <iframe width="380" height="240" src="https://www.youtube.com/embed/pBhBPGf76w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="zoo-screen__side-screen-item">
+              <div class="zoo-screen__temporary-block"></div> <!-- !remove later -->
+              <img class="zoo-screen__side-screen-item-icon" src="../../../assets/icons/icon-live-video.svg" alt="">
+              <iframe width="380" height="240" src="https://www.youtube.com/embed/5xvrX8WmR9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="zoo-screen__arrow-btns-wrapper">
+              <button class="arrow-btn-right arrow-btn">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.5 15.5L33.8527 25.6009C34.2151 25.9923 34.2065 26.5994 33.833 26.9804L24.5 36.5" stroke="#19707D" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M19.5 15.5L28.8527 25.6009C29.2151 25.9923 29.2065 26.5994 28.833 26.9804L19.5 36.5" stroke="#19707D" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <button class="arrow-btn-left arrow-btn">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.5 15.5L18.1473 25.6009C17.7849 25.9923 17.7935 26.5994 18.167 26.9804L27.5 36.5" stroke="#19707D" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M32.5 15.5L23.1473 25.6009C22.7849 25.9923 22.7935 26.5994 23.167 26.9804L32.5 36.5" stroke="#19707D" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        
+        </div>
+        <div class="zoo-info">
+          <div class="zoo-info__text-main">
+            <h2 class="zoo-info__heading">Information</h2>
+            <h3 class="zoo-info__subheading">Zoo</h3>
+            <p class="zoo-info__paragraph"><a class="zoo-info__paragraph" href="https://en.wikipedia.org/wiki/Eastern_gorilla">GRACE gorillas</a></p>
+            <h3 class="zoo-info__subheading">Type of aviary</h3>
+            <p class="zoo-info__paragraph">Imitation of the natural environment</p>
+            <h3 class="zoo-info__subheading">Habitat</h3>
+            <p class="zoo-info__paragraph">Eastern <a class="zoo-info__paragraph" href="https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo">Democratic Republic of the Congo </a>, southwestern Uganda and Rwanda</p>
+            <h3 class="zoo-info__subheading">Type of food</h3>
+            <p class="zoo-info__paragraph">fruits, leaves, stems and bark as well as small insects such as ants and termites</p>
+            <h3 class="zoo-info__subheading">Population in the world</h3>
+            <p class="zoo-info__paragraph">6 000</p>
+            <h3 class="zoo-info__subheading">About species</h3>
+            <p class="zoo-info__paragraph">The eastern gorilla has become increasingly endangered since the 1990s, and the species was listed as critically endangered in September 2016 as its population continued to decrease.</p>
+
+          </div>
+          <div class="zoo-info__text-facts">
+            <h2 class="zoo-info__heading">Interesting facts</h2>
+            <ul class="zoo-info__list">
+              <li class="zoo-info__list-item">The eastern gorilla is a critically endangered species of the genus Gorilla and the largest living primate.</li>
+              <li class="zoo-info__list-item">Gorillas tend to have larger group sizes than their western relatives, numbering up to 35 individuals.</li>
+              <li class="zoo-info__list-item">The gorillas can choose where to sleep and they often choose to bed down inside their night building, but they sometimes sleep outside too.</li>
+              <li class="zoo-info__list-item">Because they eat so much fibrous vegetation, gorillas spend a lot of time resting and digesting.</li>
+              <li class="zoo-info__list-item">Males have an average weight of 210 kilograms, females of 100 kilograms.</li>
+              <li class="zoo-info__list-item">Primary threats to the eastern gorilla include habitat destruction for residential, commercial, and agricultural purposes, habitat fragmentation caused by transportation corridors and resource extraction, as well as disease.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="forest_zoo">
+      <div class="forest-images_zoo">
+        <img id="tree1" src="../../../assets/images/tree.svg" alt="">
+        <img id="panda" src="../../../assets/images/panda.svg" alt="">
+        <img id="bamboo2" src="../../../assets/images/bamboo.svg" alt="">
+        <img id="tree3" src="../../../assets/images/tree.svg" alt="">
+      </div>
+      <button class="pay-and-feed-btn">donate to volunteers</button>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <a class="footer-logo" href="../../landing/index.html"><img src="../../../assets/icons/logo-large.svg" alt="logo" /></a>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="../../landing/index.html">about</a></li>
+            <li><a href="../../map/map.html">map</a></li>
+            <li><a href="./gorilla.html">zoos</a></li>
+            <li><a href="../../contact-us/404.html">contact us</a></li>
+            <li><a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">design</a></li>
+          </ul>
+        </nav>
+        <div class="footer-credentials">
+          <p>design by lemeshko kateryna
+            ©RSSchool and ©Yem Digital 2021</p>
+        </div>
+      </div>  
+    </footer>
+  </body>
+</html>

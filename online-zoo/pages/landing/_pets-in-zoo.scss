@@ -1,0 +1,428 @@
+.pets-in-zoo {
+  max-width: 1920px;
+  // height: 1037px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} .pets-container {
+  display: flex;
+}
+  .pets-in-zoo-wrapper {
+    width: 1480px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } .pets-in-zoo-heading {
+      width: 1480px;
+      margin: 0 auto;
+      height: 190px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  } .pets-in-zoo-heading span {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: $black;
+      letter-spacing: 0px;
+    }
+    .pets-in-zoo-heading button {
+      font-family: "Roboto Mono";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      width: 331px;
+      height: 52px;
+      text-transform: uppercase;
+      color: #19707D;
+      border: 1.5px solid #19707D;
+      box-sizing: border-box;
+      border-radius: 100px;
+      background: none;
+      margin-bottom: 4px;
+      cursor: pointer;
+    } .pets-in-zoo-heading button img {
+        margin-right: 5px;
+    }
+    .pets-in-zoo-card {
+      width: 480px;
+      height: 344px;
+      display: flex;
+      padding-top: 20px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+      cursor: pointer;
+    } .pets-in-zoo-card-img {
+        align-self: center;
+        max-width: 100%;
+        position: relative;
+    } .pets-in-zoo-card-text {
+        border-top: 1px solid #E5EAEB;
+        height: 91px;
+        padding: 0px 31px 0px 29px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  .pets-in-zoo-card-name {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          color: #2D2D2D;
+          display: inline-block;
+          margin: 0;
+          padding-bottom: 8px;
+       } .pets-in-zoo-card-place {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #919191;
+            margin-top: 0;
+            margin-bottom: 5px;
+       }
+       .pets-in-zoo-heading button:hover {
+        color: #ffffff;
+        background-color: $black;
+        box-shadow: 0px 2px 50px rgba(1, 24, 27, 0.6);
+       }
+
+// The following rotation was inspired by this example: https://stackoverflow.com/questions/51010556/how-to-rotate-clip-path-without-rotating-image
+
+.image {
+  cursor: pointer;
+  width: 229px;
+  height: 221px;
+  clip-path: path("M208.771 45.8713C228.621 72.65 234.135 109.15 223.842 137.212C213.549 165.275 187.817 185.084 158.225 200.49C128.817 215.897 95.5484 227.086 67.2429 217.365C38.9373 207.827 15.4106 177.747 5.30151 142.164C-4.62382 106.582 -1.13158 65.4968 20.1895 38.5347C41.6944 11.3893 80.8442 -1.81665 117.788 0.200917C154.549 2.21848 188.92 19.2761 208.771 45.8713Z");
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  left: -10%;
+  right: -10%;
+  background: var(--i) center/cover;
+  transition: transform 0.5s;
+}
+
+.image:hover {
+  transform: rotate(360deg);
+}
+
+.image:hover::before {
+  transform: rotate(-360deg);
+}
+
+
+.arrow-btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 52px;
+  height: 412px;
+  margin-bottom: 20px;
+}
+
+.arrow-btn {
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.2);
+}
+
+.penguin-svg {
+  margin-top: auto;
+  margin-left: 10px;
+}
+
+
+@media (max-width: 1920px) {
+  .pets-in-zoo-wrapper {
+    max-width: 1480px;
+    width: 95.16%;
+    gap: 2.027%;
+  }
+  .pets-in-zoo-card {
+    width: 31.982%;
+    height: 344px;
+  }
+}
+
+
+@media (max-width: 1600px) {
+  .pets-in-zoo {
+    width: 95%;
+  }
+  .pets-in-zoo-wrapper {
+    width: 95.16%;
+    gap: 2.027%;
+  }
+  .pets-in-zoo-card {
+    width: 31.982%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .pets-in-zoo-card-text {
+    height: 72px;
+    padding: 0px 31px 0px 29px;
+}  .pets-in-zoo-card-name {
+      font-weight: 500;
+      font-size: 16.5148px;
+      line-height: 19px;
+      padding-bottom: 8px;
+   } .pets-in-zoo-card-place {
+        font-size: 12.8449px;
+        line-height: 15px;
+        color: #919191;
+        margin-bottom: 5px;
+   } .image {
+      width: 155.86px;
+      height: 150.47px;
+      clip-path: path("M142.873 31.9215C156.388 50.1538 160.142 75.0047 153.134 94.1112C146.126 113.218 128.606 126.705 108.459 137.194C88.4357 147.684 65.785 155.302 46.513 148.683C27.2411 142.19 11.2229 121.709 4.34002 97.4829C-2.41767 73.2564 -0.0399708 45.2835 14.4766 26.9263C29.1182 8.44423 55.7736 -0.547054 80.9272 0.826614C105.956 2.20028 129.357 13.814 142.873 31.9215Z");
+   } .pets-in-zoo-heading {
+       width: 100%
+   } .pets-in-zoo-heading button {
+      width: 303px;
+      height: 40px;
+      font-size: 16px;
+   }
+    .pets-in-zoo-card-name {
+      font-size: 17.2414px;
+      line-height: 20px;
+   }
+    .pets-in-zoo-card-place {
+      font-size: 13.41px;
+      line-height: 16px;
+   }
+}
+
+@media (max-width: 1220px) {
+  .pets-in-zoo {
+    width: 98%;
+    margin-bottom: 46px;
+  }
+  .pets-in-zoo-wrapper {
+    width: 95.16%;
+    gap: 2.027%;
+  }
+  .pets-in-zoo-card {
+    width: 31.982%;
+    height: 273px;
+    margin-bottom: 16px;
+  }
+  .pets-in-zoo-card-watch-icon {
+    width: 22px;
+  }
+  .pets-in-zoo-card-text {
+    height: 72px;
+    padding: 0px 8px 8px 36px;
+  } .pets-in-zoo-heading {
+    padding-left: 16px;
+    box-sizing: border-box;
+    // padding-right: 13px;
+    height: 151px;
+  } .arrow-btns-wrapper {
+    height: 340px;
+    margin-bottom: 49px;
+  } .pets-in-zoo-card-name {
+    font-size: 17.2414px;
+    line-height: 20px;
+ }
+  .pets-in-zoo-card-place {
+    font-size: 13.41px;
+    line-height: 16px;
+ } .image {
+  width: 155.86px;
+  height: 150.47px;
+  clip-path: path("M142.873 31.9215C156.388 50.1538 160.142 75.0047 153.134 94.1112C146.126 113.218 128.606 126.705 108.459 137.194C88.4357 147.684 65.785 155.302 46.513 148.683C27.2411 142.19 11.2229 121.709 4.34002 97.4829C-2.41767 73.2564 -0.0399708 45.2835 14.4766 26.9263C29.1182 8.44423 55.7736 -0.547054 80.9272 0.826614C105.956 2.20028 129.357 13.814 142.873 31.9215Z");
+ }
+}
+
+
+@media (max-width: 900px) {
+  .pets-in-zoo {
+    width: 95%;
+  }
+  .pets-in-zoo-wrapper {
+    width: 95.16%;
+    gap: 2.027%;
+  }
+  .pets-in-zoo-card {
+    width: 31.982%;
+    height: 273px;
+    margin-bottom: 30px;
+    flex: 48%;
+  }
+  .pets-in-zoo-card:nth-child(3n+0) {
+    display: none;
+  }
+  .pets-in-zoo-card-text {
+    height: 72px;
+    padding: 0px 21px 0px 19px;
+  } .pets-in-zoo-heading {
+      width: 100%
+  } .arrow-btns-wrapper {
+    height: 348px;
+  }
+  .pets-in-zoo-card-name {
+    font-size: 16px;
+    line-height: 19px;
+ }
+  .pets-in-zoo-card-place {
+    font-size: 12px;
+    line-height: 14px;
+ } .image {
+  width: 155.86px;
+  height: 150.47px;
+  clip-path: path("M142.873 31.9215C156.388 50.1538 160.142 75.0047 153.134 94.1112C146.126 113.218 128.606 126.705 108.459 137.194C88.4357 147.684 65.785 155.302 46.513 148.683C27.2411 142.19 11.2229 121.709 4.34002 97.4829C-2.41767 73.2564 -0.0399708 45.2835 14.4766 26.9263C29.1182 8.44423 55.7736 -0.547054 80.9272 0.826614C105.956 2.20028 129.357 13.814 142.873 31.9215Z");
+ }
+}
+
+@media (max-width: 700px) {
+  .pets-in-zoo {
+    width: 95%;
+    margin-bottom: 0;
+  }
+  .pets-in-zoo-wrapper {
+    width: 95.16%;
+    gap: 2.027%;
+  }
+  .pets-in-zoo-card {
+    width: 40%;
+    height: 46.56vw;
+    margin-bottom: 14px;
+    flex: 48%;
+  }
+  .pets-in-zoo-card:nth-child(3n+0) {
+    display: none;
+  }
+  .pets-in-zoo-card-text {
+    height: 72px;
+    padding: 0px 21px 0px 19px;
+    position: relative;
+  } .pets-in-zoo-heading {
+      width: 100%;
+      height: 58px;
+      margin-top: 21px;
+      padding: 0;
+    }
+   .pets-in-zoo-heading span {
+      font-size: 18px;
+      line-height: 21px;
+   }
+   .pets-in-zoo-heading button {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    width: 269px;
+    height: 37px;
+   }
+   .arrow-btns-wrapper {
+    height: 348px;
+  }
+  .pets-in-zoo-card-name {
+    font-size: 16px;
+    line-height: 19px;
+ }
+  .pets-in-zoo-card-place {
+    font-size: 12px;
+    line-height: 14px;
+ } .image {
+  width: 170px;
+  height: 164px;
+  clip-path: path("M154.925 34.0403C169.656 53.9122 173.748 80.9979 166.109 101.823C158.471 122.647 139.376 137.347 117.416 148.78C95.5924 160.213 70.9047 168.516 49.8997 161.302C28.8947 154.225 11.4359 131.903 3.93415 105.498C-3.43125 79.0924 -0.839724 48.6039 14.9822 28.5959C30.9406 8.45175 59.993 -1.3481 87.4087 0.149096C114.688 1.6463 140.194 14.3044 154.925 34.0403Z");
+ } .pets-in-zoo-card-watch-icon {
+    position: absolute;
+    top: -225px;
+    right: 10px;
+ }
+}
+
+@media (max-width: 600px) {
+  .pets-in-zoo {
+    width: 95%;
+    margin-bottom: 103px;
+  }
+  .pets-in-zoo-wrapper {
+    width: 95.16%;
+    gap: 2.027%;
+  }
+  .pets-in-zoo-card {
+    height: 294px;
+    width: 240px;
+    margin-bottom: 18px;
+    margin-left: 0px;
+  }
+  .pets-in-zoo-card:nth-child(2n+0) {
+    display: none;
+  }
+  .pets-in-zoo-card-text {
+    height: 84px;
+    padding: 0px 12px 3px 14px;
+    position: relative;
+  } .pets-in-zoo-heading {
+      width: 100%;
+      margin-top: -7px;
+  } .arrow-btns-wrapper {
+    height: 348px;
+  }
+  .pets-in-zoo-card-name {
+    font-size: 17px;
+    line-height: 19px;
+    padding-left: 3px;
+ }
+  .pets-in-zoo-card-place {
+    font-size: 13px;
+    line-height: 14px;
+ } .image {
+  margin-top: 32px;
+  width: 152px;
+  height: 147px;
+  clip-path: path("M139.92 30.6944C153.164 48.56 156.843 72.9112 149.976 91.6334C143.109 110.356 125.941 123.571 106.198 133.85C86.5782 144.129 64.3829 151.594 45.4985 145.108C26.6142 138.745 10.9181 118.677 4.17368 94.9373C-2.44811 71.198 -0.118227 43.7877 14.1064 25.7997C28.4536 7.68928 54.5728 -1.12118 79.2206 0.224864C103.746 1.57091 126.677 12.9511 139.92 30.6944Z");
+ } .pets-in-zoo-card-watch-icon {
+    position: absolute;
+    top: -210px;
+    right: 20px;
+    width: 26.18px;
+ } .pets-in-zoo-heading span {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .pets-in-zoo-heading button {
+    font-size: 14px;
+    line-height: 37px;
+    width: 269px;
+    height: 37px;
+    position: absolute;
+    bottom: -76px;
+    left: 18px;
+  }
+  .penguin-svg {
+    visibility: hidden
+  }
+}
