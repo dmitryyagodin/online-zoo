@@ -1,0 +1,48 @@
+.forest_zoo {
+  width: 100%;
+  height: 493px;
+  background-image: url(../../assets/images/forest-background404.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  display:flex;
+} .forest-images_zoo {
+    width: 1920px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.forest_zoo {
+  position: absolute;
+  bottom: 111px;
+}
+
+#panda {
+  position: absolute;
+  left: 940px;
+  top: -154px;
+}
+
+#bamboo2 {
+  position: absolute;
+  left: 1030px;
+  top: -268px;
+}
+
+#tree1 {
+  position: absolute;
+  left: 383px;
+  bottom: -2px;
+}
+
+#tree3 {
+  position: absolute;
+  left: 1691px;
+  top: -112px;
+}
+
+#penguin {
+  position: absolute;
+  left: 575px;
+  top: 18px;
+}

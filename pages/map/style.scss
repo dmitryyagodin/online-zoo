@@ -1,0 +1,238 @@
+@import '../landing/header';
+@import '../landing/footer';
+// @import '../landing/tooltip';
+
+// * {
+//   border: 1px solid #f00 !important;
+// }
+
+* {
+  box-sizing: border-box;
+}
+.map__tooltip {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+}
+
+.map__tooltip .map__tooltiptext {
+  bottom: 100%;
+  right: -120%;
+  height: auto;
+  padding: 15px;
+  visibility: hidden;
+  width: 210px;
+  height: 85px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  z-index: 1;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0D444D;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.map__tooltip .map__tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.map__tooltip:hover .map__tooltiptext {
+  visibility: visible;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #2A8086;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 1920px;
+  margin: 0 auto auto auto;
+  // min-height: 1040px;
+  background: #2A8086;
+  position: relative;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 1480px;
+  margin: auto;
+  padding-top: 108px;
+  padding-left: 42px;
+}
+
+.map__heading {
+  margin: 0;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #C5E1E6;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+
+.map-image__eagle {
+  position: absolute;
+  left: 12%;
+  top: 46%;
+}
+
+.map-image__aligator {
+    position: absolute;
+    left: 23%;
+    top: 53%;
+}
+
+.map-image__gorilla {
+  position: absolute;
+  left: 47%;
+  top: 62%;
+}
+
+.map-image__panda {
+  position: absolute;
+  left: 69%;
+  top: 49%;
+}
+
+
+.map-image .image-border,
+.map-image__frame::before,
+.map-image .map-image__frame {
+  transition: transform 0.5s;
+  transform-origin: center;
+}
+
+.map-image:hover .image-border,
+.map-image:hover .map-image__frame {
+  transform: rotate(360deg);
+}
+
+.map-image:hover .map-image__frame::before {
+  transform: rotate(-360deg);
+}
+
+.map-image__frame {
+  cursor: pointer;
+  width: 76px;
+  height: 74px;
+  clip-path: path("M52.3634 66.2422L52.3625 66.2426C42.6079 71.353 31.6849 74.9978 22.4409 71.8232L22.4389 71.8225C13.1919 68.7067 5.44283 58.8433 2.10629 47.1001C-1.16887 35.3578 0.000248415 21.8489 6.98486 13.0163C14.0321 4.12084 26.9009 -0.239575 39.0852 0.425826C51.1978 1.09062 62.5033 6.71126 69.0213 15.4431C75.5448 24.2434 77.3487 36.2349 73.9762 45.4295C70.6068 54.6159 62.1663 61.1384 52.3634 66.2422Z");
+  position: relative;
+  // overflow: hidden;
+}
+
+.map-image__frame::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  left: -10%;
+  right: -10%;
+  background: var(--i) center/cover;
+}
+
+.map-image__frame {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+
+.map-sizing-icons {
+  position: absolute;
+  right: 5%;
+  top: 96%;
+  width: 82px;
+  display: flex;
+  justify-content: space-between;
+  bottom: 22px;
+}
+
+.map-sizing-btn {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.map-sizing-btn:hover {
+  transform: scale(1.2);
+}
+
+.map-image:active .image-border {
+  fill: #0A5D69;
+}
+
+@media (max-width: 1920px) {
+  main {
+    max-width: 1920px;
+    width: 100%;
+  }
+  .map-sizing-icons {
+    right: 5%;
+  }
+}
+
+@media (max-width: 1560px) {
+  .map-wrapper {
+    width: 99%;
+    padding: 0;
+    margin: 0;
+  }
+  .map-sizing-icons {
+    right: 5%;
+  }
+  .map__svg {
+    width: 100%;
+    padding: 0;
+    max-width: 1422px;
+    margin: 114px 0 53px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .map__heading {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .map-wrapper {
+    min-width: 400px;
+  }
+  .map__tooltip .map__tooltiptext {
+    right: 15%;
+  }
+  .map__tooltip {
+    width: 188px;
+    height: 192px;
+  }
+}
+
+@media (max-width: 625px) {
+  main {
+    overflow-x: clip;
+  }
+  .map__heading {
+    display: none;
+  }
+}
